@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	//innerHTML标签
+	<script type="text/javascript">
+		window.onload = function(){
+			var btn = document.getElementById('btn');
+			var box = document.getElementById('box');
+			btn.onclick = function(){
+				console.log(box.innerHTML);
+				box.innerHTML = '<span>Peter Chan</span>';
+			};
+		};
+	</script>
+	<input type="button" name="" value="Click" id="btn">
+	<div id="box">
+		<p>This is Head</p>
+		<p>This is a Test</p>
+	</div>
+</body>
+</html>
