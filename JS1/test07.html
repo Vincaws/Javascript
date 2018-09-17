@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	#box{
+		border: 1px solid red;height: 100px;width: 100px;
+		background-color: red;
+	}
+</style>
+</head>
+<body>
+	<input type="button" name="" value="Click" id="btn">
+	<div id="box"></div>
+	<script type="text/javascript">
+		var btn = document.getElementById('btn');
+		var box = document.getElementById('box');
+		btn.onclick = function(){
+			if (box.style.display == 'none'){
+				box.style.display = 'block';
+			}else{
+				box.style.display = 'none';
+			}
+		};
+	</script>
+</body>
+</html>
